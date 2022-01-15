@@ -1,0 +1,24 @@
+apiVersion: v2
+name: nginx-phpfpm-keol
+description: KEOL.HU Nginx pod with multiple fpm pods
+type: application
+version: 0.0.1
+appVersion: "7-fpm-buster"
+home: https://github.com/calliotel
+icon: https://raw.githubusercontent.com/calliotel/phpfpm-nginx-helm/main/icon.png
+keywords:
+  - php
+  - php-fpm
+  - nginx
+sources:
+  - https://github.com/calliotel/phpfpm-nginx-helm/
+maintainers:
+  - name: Calliotel
+    email: info@calliotel.hu
+    url: https://github.com/calliotel
+annotations:
+  artifacthub.io/links: |
+    - name: Ngix image
+      url: https://hub.docker.com/_/nginx
+    - name: PHP FPM image
+      url: https://hub.docker.com/_/php?tab=tags&ordering=last_updated&name=debian&page=1
